@@ -1,0 +1,16 @@
+stages:
+  - stage: A
+    jobs:
+    - job: A1Job 
+      steps:
+       - task: Bash@3
+         inputs:
+          targetType: 'inline'
+          script: 'javac HelloWorld.java'
+
+    - job: A2Job
+      steps:
+       - task: Bash@3
+         inputs:
+          targetType: 'inline'
+          script: 'java HelloWorld.java'
