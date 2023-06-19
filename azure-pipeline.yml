@@ -13,4 +13,4 @@ stages:
        - task: Bash@3
          inputs:
           targetType: 'inline'
-          script: 'java HelloWorld.java'
+          script: 'java HelloWorld'
